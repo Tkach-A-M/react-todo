@@ -1,3 +1,7 @@
 .itemAddForm{
     margin-top: 10px;
 }
+
+.itemAddForm input{
+    margin-right: 3px;
+}

@@ -57,7 +57,7 @@ export default class App extends Component {
 
     addItem = (text) => {
         this.setState(({ todoData }) => {
-            const newArray = [...todoData, this.createTodoItem('Hello World')];
+            const newArray = [...todoData, this.createTodoItem(text)];
             return {
                 todoData: newArray
             };
