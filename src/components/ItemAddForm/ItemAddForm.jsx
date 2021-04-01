@@ -17,10 +17,12 @@ export default class AddItem extends React.Component {
     //click Enter or left mouse key
     onSubmit = (e) => {
         e.preventDefault();
+        if(this.state.label){
         this.props.onItemAdded(this.state.label);
         this.setState({
             label: ''
         })
+    }
     }
 
     render() {
